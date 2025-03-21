@@ -1,0 +1,39 @@
+# Here is my code woring with a list using different methods to manipulate the data
+# This are my first steps into python, if you have a recom for me y will appreciate it
+# As of now im using jupyter notebook on VSCODE, with anaconda as a virtual enviroment, 
+inventory = ["twin bed", "twin bed", "headboard", "queen bed", "king bed", "dresser", "dresser", "table", "table", "nightstand", "nightstand", "king bed", "king bed", "twin bed", "twin bed", "sheets", "sheets", "pillow", "pillow"]
+
+#Asking for the length of the inventory list
+inventory_len=len(inventory)
+print(inventory_len)
+
+#Looking for the first variable
+first = inventory[1]
+print(first)
+
+#Looking for the ast variable
+last = inventory[-1]
+print(last)
+
+#Selecting items two through 6
+inventory_2_6 = inventory[2:6]
+print(inventory_2_6)
+
+#Selecting first three items
+first_3 = inventory[:3]
+print(first_3)
+
+#How many twin_bed are in inventory?
+twin_beds = inventory.count("twin bed")
+print(twin_beds)
+
+#Removing the 5th element from the list
+removed_item = inventory.pop(4)
+print(removed_item)
+
+#Adding a new item in the 11 position
+inventory.insert(10,"19th Century Bed Frame")
+
+#Sorting the information
+inventory = sorted(inventory)
+print(inventory)
